@@ -17,7 +17,7 @@ import { ScrollArea } from '@/components/website/ui//scroll-area';
 import { generateSidebarData } from './constant';
 // import docsData from '@/configs/docs.json' assert { type: 'json' };
 import { cn } from '@/lib/utils';
-import { basePath } from './sidebar';
+import { basePath } from './sidebar-components';
 import { creativeComponents, basicComponents } from '@/configs/leftSideComponentMetaData';
 import { OWNER_URL } from './utils/websiteConstants';
 

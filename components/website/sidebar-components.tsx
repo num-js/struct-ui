@@ -23,7 +23,7 @@ export const basePath = [
   },
 ];
 
-function DocsSidebar() {
+function SidebarComponents() {
   const pathname = usePathname();
   const { setTheme } = useTheme();
   const { addVisitedPage, getRecentPages, removeAllRecentPages } =
@@ -180,4 +180,4 @@ export const ItemsWithName = ({
     </div>
   );
 };
-export default DocsSidebar;
+export default SidebarComponents;
