@@ -1,28 +1,24 @@
-import { OWNER_URL } from "./utils/websiteConstants"
+import { Heart } from 'lucide-react';
+import { SITE_NAME } from './utils/websiteConstants';
 
 export const Footer = () => {
+  const year = new Date().getFullYear();
+
   return (
-    <footer className='border-t pb-24 pt-4 xl:pb-4'>
-      <div className='container mx-auto'>
-
-        <div className='flex gap-2 items-center justify-center'>
-          <p className='text-balance text-center text-sm leading-loose text-muted-foreground md:text-center'>
-            © 2026 Struct-UI. All rights reserved.
+    <footer className='border-t border-border/80 pb-24 pt-6 xl:pb-6'>
+      <div className='container mx-auto max-w-5xl px-4'>
+        <div className='flex flex-col items-center justify-center gap-1.5 text-center'>
+          <p className='flex items-end gap-1.5 text-balance text-sm font-medium text-foreground/90'>
+            © {year} {SITE_NAME} |
+            Built with
+            {/* <Heart className='size-3.5 shrink-0 text-rose-500/80' aria-label='care' /> */}
+            <img src="https://numan-dev.web.app/images/num_heart.gif" width="26px" aria-label='care' alt="heart" />
           </p>
-
-          Built with
-          <img src="https://numan-dev.web.app/images/num_heart.gif" width="26px" />
-          by{' '}
-          <a
-            href={OWNER_URL}
-            target='_blank'
-            rel='noreferrer'
-            className='font-medium underline underline-offset-4'
-          >
-            &lt;N_Ah/&gt;
-          </a>
+          <p className='text-balance text-xs text-muted-foreground'>
+            UI components and patterns for React and Next.js applications.
+          </p>
         </div>
       </div>
     </footer>
-  )
-}
+  );
+};
