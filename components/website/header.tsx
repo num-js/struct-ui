@@ -61,7 +61,7 @@ function Header() {
             <SearchDialog classname='w-60' />
             <a
               className={`sm:flex hidden flex-shrink-0 items-center space-x-2 group  px-2 rounded-md bg-primary text-primary-foreground border`}
-              href='https://github.com/num-js/struct-ui'
+              href='https://github.com/TheUndefinedCoders/struct-ui'
               target='_blank'
             >
               <svg
@@ -78,7 +78,7 @@ function Header() {
               >
                 <polygon points='12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2' />
               </svg>
-              <span className='font-medium'>Star on github</span>
+              <span className='font-medium'> Github </span>
             </a>
             <a
               target='_blank'
@@ -88,7 +88,7 @@ function Header() {
               <Github />
             </a>
 
-            <a
+            {/* <a
               target='_blank'
               href={OWNER_URL}
               className='border flex-shrink-0 bg-primary  text-primary-foreground text-2xl w-12   grid  place-content-center    rounded-md'
@@ -103,7 +103,7 @@ function Header() {
               >
                 <path d='M94.5068 0H112.907L72.7076 46.172L120 109H82.9692L53.9674 70.8942L20.7818 109H2.3693L45.3666 59.6147L0 0H37.9685L64.1848 34.8292L94.5068 0ZM88.0484 97.9318H98.2448L32.4288 10.4872H21.4882L88.0484 97.9318Z' />
               </svg>
-            </a>
+            </a> */}
             <DropdownMenu>
               <DropdownMenuTrigger asChild>
                 <button className='relative flex-shrink-0 grid w-12 place-content-center rounded-md border border-input bg-primary-foreground'>
