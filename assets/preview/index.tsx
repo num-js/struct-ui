@@ -4,6 +4,7 @@ import buttons from '@/assets/preview/buttons.svg';
 import motionNumber from '@/assets/preview/motion-number.svg';
 import clippath from '@/assets/preview/clip-path.svg';
 import cardHover from '@/assets/preview/card-hover.svg';
+import teamSection from '@/assets/preview/team-section.svg';
 
 
 const preview = {
@@ -13,5 +14,6 @@ const preview = {
   buttons,
   card,
   cardHover,
+  teamSection,
 };
 export default preview;

@@ -42,11 +42,11 @@ export const basicComponents = [
     href: '/components/horizontal-scroll',
     name: 'Horizontal Scroll'
   },
-  {
-    href: '/components/demo',
-    name: 'Demo Components',
-    new: true,
-  },
+  // {
+  //   href: '/components/demo',
+  //   name: 'Demo Components',
+  //   new: true,
+  // },
 ];
 
 

@@ -11,13 +11,12 @@ export async function generateStaticParams() {
   return paths;
 }
 
-export default function SectionPage({
+export default async function SectionPage({
   params,
 }: {
-  params: { componentName: string };
+  params: Promise<{ componentName: string }>;
 }) {
-  const { componentName } = params;
-  console.log(componentName);
+  const { componentName } = await params;
 
   // Find the component data based on componentName
   const component = docs.dataArray.reduce((found, category) => {

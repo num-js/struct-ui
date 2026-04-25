@@ -25,6 +25,21 @@ type ComponentPreviewProps = {
   iframeComponent?: string;
 };
 
+const normalizeBaseUrl = (url?: string) => {
+  if (!url) return '';
+  return url.replace(/\/+$/, '');
+};
+
+const createPreviewUrl = (path?: string, baseUrl?: string) => {
+  if (!path) return '';
+  const normalizedPath = path.replace(/^\/+/, '');
+  const normalizedBase = normalizeBaseUrl(baseUrl);
+
+  return normalizedBase ? `${normalizedBase}/${normalizedPath}` : `/${normalizedPath}`;
+};
+
+// const DEFAULT_ANIMATION_BASE_URL = 'https://struct-ui-animation.vercel.app';
+
 export default function ComponentPreview({
   component,
   hasReTrigger = false,
@@ -150,7 +165,10 @@ export default function ComponentPreview({
                   style={{ width: width }}
                 >
                   <iframe
-                    src={`${process.env.NEXT_PUBLIC_ANIMATION_URL}/${iframeComponent}`}
+                    src={createPreviewUrl(
+                      iframeComponent,
+                      process.env.NEXT_PUBLIC_ANIMATION_URL
+                    )}
                     className='h-full w-full'
                     style={{ maxWidth: '100%' }}
                     loading='lazy'
@@ -172,7 +190,10 @@ export default function ComponentPreview({
               >
                 <>
                   <iframe
-                    src={`${process.env.NEXT_PUBLIC_CLIENT_URL}/${component?.iframeSrc}`}
+                    src={createPreviewUrl(
+                      component?.iframeSrc,
+                      process.env.NEXT_PUBLIC_CLIENT_URL
+                    )}
                     className='h-full w-full'
                     style={{ maxWidth: '100%' }}
                     loading='lazy'

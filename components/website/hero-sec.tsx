@@ -31,10 +31,10 @@ function HeroSec() {
           {Array.from({ length: amountOfBlocks }, (_, rowIndex) => (
             <div
               key={rowIndex}
-              className={`h-[6vw] w-full border-[1px] dark:border-[rgba(255,255,255,0.015)] border-gray-50 ${
+              className={`h-[6vw] w-full border-[1px] border-slate-100 dark:border-[rgba(255,255,255,0.015)] ${
                 // @ts-ignore
                 activeDivs[columnIndex]?.has(rowIndex)
-                  ? 'dark:bg-[rgba(255,255,255,0.03)] bg-gray-50'
+                  ? 'bg-slate-100 dark:bg-[rgba(255,255,255,0.03)]'
                   : ''
               }`}
               style={{ height: `${blockSize}px` }}
@@ -53,7 +53,7 @@ function HeroSec() {
   }, [activeDivs]);
   return (
     <>
-      <section className='min-h-[90vh] py-16 overflow-hidden relative'>
+      <section className='min-h-[90vh] py-16 overflow-hidden relative bg-white dark:bg-neutral-950'>
         <div className="max-w-7xl mx-auto px-6 lg:px-12 py-20 grid lg:grid-cols-2 gap-12 items-center">
           {/* Left Content */}
           <motion.div
@@ -62,33 +62,33 @@ function HeroSec() {
             transition={{ duration: 0.7 }}
             className="space-y-6"
           >
-            <span className="inline-block px-3 py-1 text-sm rounded-full bg-neutral-900 border border-neutral-700">
+            <span className="inline-block px-3 py-1 text-sm rounded-full bg-blue-50 text-blue-700 border border-blue-200 dark:bg-neutral-900 dark:text-neutral-200 dark:border-neutral-700">
               🚀 Introducing Your UI Library
             </span>
 
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-tight">
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-tight text-slate-900 dark:text-white">
               Build stunning UIs with <br />
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-600">
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-violet-600 dark:from-blue-400 dark:to-purple-600">
                 Effortless Precision
               </span>
             </h1>
 
-            <p className="text-lg text-neutral-400 max-w-xl">
+            <p className="text-lg text-slate-600 dark:text-neutral-400 max-w-xl">
               Who love spending hours tweaking CSS and debugging animations?
               Save yourself the headache and grab these components — they're practically begging to make your life easier.
             </p>
 
             <div className="flex gap-4">
-              <a href='/get-started' className="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 h-10 px-4 py-2 bg-white text-black hover:bg-neutral-200">
+              <a href='/get-started' className="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 h-10 px-4 py-2 bg-slate-900 text-white hover:bg-slate-800 dark:bg-white dark:text-black dark:hover:bg-neutral-200">
                 Get Started
               </a>
-              <a href='/components' className="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border bg-background hover:text-accent-foreground h-10 px-4 py-2 border-neutral-700 text-white hover:bg-neutral-900">
+              <a href='/components' className="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border h-10 px-4 py-2 border-slate-300 text-slate-700 hover:bg-slate-100 dark:border-neutral-700 dark:text-white dark:hover:bg-neutral-900">
                 Custom Components
               </a>
             </div>
 
             {/* Tech Stack Logos */}
-            <div className="flex gap-6 mt-6 opacity-80">
+            <div className="flex gap-6 mt-6 text-slate-700 dark:text-neutral-300 opacity-90 dark:opacity-80">
               <span>⚛️ React</span>
               <span>▲ Next.js</span>
               <span>🎨 TailwindCSS</span>
@@ -104,23 +104,23 @@ function HeroSec() {
             className="grid sm:grid-cols-2 gap-6"
           >
             <a href='/components'>
-              <div className="bg-neutral-900 border border-neutral-800 rounded-2xl p-6 shadow-xl hover:scale-105 transition-transform">
-                <h3 className="font-semibold">⚡ Beautiful Components</h3>
-                <p className="text-sm text-neutral-400">Build stunning UIs in minutes</p>
+              <div className="bg-white border border-slate-200 rounded-2xl p-6 shadow-lg hover:shadow-xl hover:scale-105 transition-transform dark:bg-neutral-900 dark:border-neutral-800">
+                <h3 className="font-semibold text-slate-900 dark:text-white">⚡ Beautiful Components</h3>
+                <p className="text-sm text-slate-600 dark:text-neutral-400">Build stunning UIs in minutes</p>
               </div>
             </a>
 
             <a href='/components'>
-              <div className="bg-gradient-to-br from-neutral-800 to-black border border-neutral-700 rounded-2xl p-6 shadow-xl hover:scale-105 transition-transform">
-                <h3 className="font-semibold">✨ Animations</h3>
-                <p className="text-sm text-neutral-400">Framer Motion integrated</p>
+              <div className="bg-gradient-to-br from-blue-50 to-violet-50 border border-slate-200 rounded-2xl p-6 shadow-lg hover:shadow-xl hover:scale-105 transition-transform dark:from-neutral-800 dark:to-black dark:border-neutral-700">
+                <h3 className="font-semibold text-slate-900 dark:text-white">✨ Animations</h3>
+                <p className="text-sm text-slate-600 dark:text-neutral-400">Framer Motion integrated</p>
               </div>
             </a>
 
-            <div className="bg-neutral-950 w-full border border-neutral-800 rounded-2xl p-6 shadow-xl hover:scale-105 transition-transform sm:col-span-2">
+            <div className="bg-slate-50 w-full border border-slate-200 rounded-2xl p-6 shadow-lg hover:shadow-xl hover:scale-105 transition-transform sm:col-span-2 dark:bg-neutral-950 dark:border-neutral-800">
               <a href="/components" className="w-full">
-                <h3 className="font-semibold">🚀 Deploy Fast</h3>
-                <p className="text-sm text-neutral-400">Copy, paste, deploy. Done.</p>
+                <h3 className="font-semibold text-slate-900 dark:text-white">🚀 Deploy Fast</h3>
+                <p className="text-sm text-slate-600 dark:text-neutral-400">Copy, paste, deploy. Done.</p>
               </a>
             </div>
 

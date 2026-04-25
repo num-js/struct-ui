@@ -2,10 +2,16 @@ import preview from "@/assets/preview";
 
 const blocksOverviewCards = [
   {
-    id: 'image-reveal',
+    id: 'product-cards',
     url: '/blocks/product-cards',
-    name: 'Cards',
+    name: 'Product Cards',
     imgSrc: preview.card,
+  },
+  {
+    id: 'team-section',
+    url: '/blocks/team-cards',
+    name: 'Team Section',
+    imgSrc: preview.teamSection,
   },
 ];
 
