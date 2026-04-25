@@ -1,0 +1,69 @@
+<svg width="1200" height="800" viewBox="0 0 1200 800" fill="none" xmlns="http://www.w3.org/2000/svg">
+
+  <!-- Background -->
+  <rect width="1200" height="800" fill="none"/>
+
+  <!-- Title -->
+  <rect x="450" y="60" width="300" height="30" rx="8" fill="gray"/>
+  <rect x="300" y="110" width="600" height="16" rx="8" fill="gray"/>
+  <rect x="350" y="140" width="500" height="16" rx="8" fill="gray"/>
+
+  <!-- Card Template -->
+  <!-- Row 1 -->
+  <!-- Card 1 -->
+  <rect x="80" y="200" width="300" height="120" rx="12" stroke="#334155" fill="none"/>
+  <circle cx="130" cy="260" r="30" fill="gray"/>
+  <rect x="180" y="240" width="150" height="16" rx="6" fill="gray"/>
+  <rect x="180" y="265" width="100" height="12" rx="6" fill="gray"/>
+
+  <!-- Card 2 -->
+  <rect x="450" y="200" width="300" height="120" rx="12" stroke="#334155" fill="none"/>
+  <circle cx="500" cy="260" r="30" fill="gray"/>
+  <rect x="550" y="240" width="150" height="16" rx="6" fill="gray"/>
+  <rect x="550" y="265" width="100" height="12" rx="6" fill="gray"/>
+
+  <!-- Card 3 -->
+  <rect x="820" y="200" width="300" height="120" rx="12" stroke="#334155" fill="none"/>
+  <circle cx="870" cy="260" r="30" fill="gray"/>
+  <rect x="920" y="240" width="150" height="16" rx="6" fill="gray"/>
+  <rect x="920" y="265" width="100" height="12" rx="6" fill="gray"/>
+
+  <!-- Row 2 -->
+  <!-- Card 4 -->
+  <rect x="80" y="350" width="300" height="120" rx="12" stroke="#334155" fill="none"/>
+  <circle cx="130" cy="410" r="30" fill="gray"/>
+  <rect x="180" y="390" width="150" height="16" rx="6" fill="gray"/>
+  <rect x="180" y="415" width="100" height="12" rx="6" fill="gray"/>
+
+  <!-- Card 5 -->
+  <rect x="450" y="350" width="300" height="120" rx="12" stroke="#334155" fill="none"/>
+  <circle cx="500" cy="410" r="30" fill="gray"/>
+  <rect x="550" y="390" width="150" height="16" rx="6" fill="gray"/>
+  <rect x="550" y="415" width="100" height="12" rx="6" fill="gray"/>
+
+  <!-- Card 6 -->
+  <rect x="820" y="350" width="300" height="120" rx="12" stroke="#334155" fill="none"/>
+  <circle cx="870" cy="410" r="30" fill="gray"/>
+  <rect x="920" y="390" width="150" height="16" rx="6" fill="gray"/>
+  <rect x="920" y="415" width="100" height="12" rx="6" fill="gray"/>
+
+  <!-- Row 3 -->
+  <!-- Card 7 -->
+  <rect x="80" y="500" width="300" height="120" rx="12" stroke="#334155" fill="none"/>
+  <circle cx="130" cy="560" r="30" fill="gray"/>
+  <rect x="180" y="540" width="150" height="16" rx="6" fill="gray"/>
+  <rect x="180" y="565" width="100" height="12" rx="6" fill="gray"/>
+
+  <!-- Card 8 -->
+  <rect x="450" y="500" width="300" height="120" rx="12" stroke="#334155" fill="none"/>
+  <circle cx="500" cy="560" r="30" fill="gray"/>
+  <rect x="550" y="540" width="150" height="16" rx="6" fill="gray"/>
+  <rect x="550" y="565" width="100" height="12" rx="6" fill="gray"/>
+
+  <!-- Card 9 -->
+  <rect x="820" y="500" width="300" height="120" rx="12" stroke="#334155" fill="none"/>
+  <circle cx="870" cy="560" r="30" fill="gray"/>
+  <rect x="920" y="540" width="150" height="16" rx="6" fill="gray"/>
+  <rect x="920" y="565" width="100" height="12" rx="6" fill="gray"/>
+
+</svg>

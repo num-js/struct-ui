@@ -59,14 +59,10 @@ function Header() {
           {/* <MobileHeader /> */}
           <div className='flex gap-2 '>
             <SearchDialog classname='w-60' />
-            <button
+            <a
               className={`sm:flex hidden flex-shrink-0 items-center space-x-2 group  px-2 rounded-md bg-primary text-primary-foreground border`}
-              onClick={() =>
-                window.open(
-                  `https://github.com/numanndev/struct-ui`,
-                  '_blank'
-                )
-              }
+              href='https://github.com/num-js/struct-ui'
+              target='_blank'
             >
               <svg
                 xmlns='http://www.w3.org/2000/svg'
@@ -83,7 +79,7 @@ function Header() {
                 <polygon points='12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2' />
               </svg>
               <span className='font-medium'>Star on github</span>
-            </button>
+            </a>
             <a
               target='_blank'
               href='https://github.com/numanndev/struct-ui'

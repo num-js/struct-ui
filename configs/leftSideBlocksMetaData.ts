@@ -1,12 +1,12 @@
 export const basicBlocks = [
   {
     href: '/blocks/product-cards',
-    name: 'Products-Cards',
+    name: 'Product Cards',
     component: 'card',
   },
   {
     href: '/blocks/team-cards',
-    name: 'Team-Cards',
+    name: 'Team Section',
     component: 'card',
   },
 ];

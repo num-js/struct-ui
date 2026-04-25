@@ -7,7 +7,7 @@ export const Footer = () => {
 
         <div className='flex gap-2 items-center justify-center'>
           <p className='text-balance text-center text-sm leading-loose text-muted-foreground md:text-center'>
-            © 2025 Struct-UI. All rights reserved.
+            © 2026 Struct-UI. All rights reserved.
           </p>
 
           Built with

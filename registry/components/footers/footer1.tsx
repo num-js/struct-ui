@@ -1,6 +1,5 @@
 'use client';
-import React, { FormEvent, useLayoutEffect, useRef, useState } from 'react';
-import { MoveRight } from 'lucide-react';
+import React, { FormEvent, useRef, useState } from 'react';
 // import * as Toast from '@radix-ui/react-toast'
 import { motion, useInView } from 'framer-motion';
 
@@ -148,20 +147,20 @@ const Footer = () => {
                   <Link href='/'>Home</Link>
                 </li>
                 <li className='text-xl font-medium'>
-                  <Link href='/about'>About us</Link>
+                  <Link href='#about'>About us</Link>
                 </li>
                 <li className='text-xl font-medium'>
-                  <Link href='/services'>Our Services</Link>
+                  <Link href='#services'>Our Services</Link>
                 </li>
 
                 <li className='text-xl font-medium'>
-                  <Link href='/projects'>Projects</Link>
+                  <Link href='#projects'>Projects</Link>
                 </li>
                 <li className='text-xl font-medium'>
-                  <Link href='/blogs'>Blogs</Link>
+                  <Link href='#blogs'>Blogs</Link>
                 </li>
                 <li className='text-xl font-medium'>
-                  <Link href='/contact-us'>Contact</Link>
+                  <Link href='#contact-us'>Contact</Link>
                 </li>
               </ul>
               <ul>
@@ -221,14 +220,13 @@ const Footer = () => {
             >
               {pathArr.map((path, index) => {
                 return (
-                  <>
-                    <motion.path
-                      custom={index}
-                      variants={variants}
-                      d={path}
-                      fill='#3E7AEE'
-                    />
-                  </>
+                  <motion.path
+                    key={path}
+                    custom={index}
+                    variants={variants}
+                    d={path}
+                    fill='#3E7AEE'
+                  />
                 );
               })}
             </motion.svg>
