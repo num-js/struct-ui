@@ -2,6 +2,7 @@
 import { useTheme } from 'next-themes';
 import React from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -15,10 +16,8 @@ import {
   MoonIcon,
   Sun,
   SunIcon,
-  X,
 } from 'lucide-react';
 import { SearchDialog } from './searchbar';
-import { OWNER_URL } from './utils/websiteConstants';
 // import MobileHeader from './moibile-header'
 
 function Header() {
@@ -31,15 +30,19 @@ function Header() {
           <div className='flex items-center gap-4'>
             <Link href='/' className='hidden lg:block'>
               <div className='relative hidden gap-2 lg:flex'>
-                <img
-                  src='../struct-ui-logo.svg'
+                <Image
+                  src='/struct-ui-logo.svg'
                   alt='struct-ui'
-                  className='w-full h-8'
+                  width={32}
+                  height={32}
+                  className='h-8 w-8'
                 />
-                <img
-                  src='../struct-ui-text.svg'
+                <Image
+                  src='/struct-ui-text.svg'
                   alt='struct-ui'
-                  className='w-full'
+                  width={122}
+                  height={32}
+                  className='h-8 w-auto'
                 />
               </div>
             </Link>

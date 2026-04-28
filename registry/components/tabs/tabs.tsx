@@ -6,13 +6,35 @@ interface ITabs {
   id: string;
 }
 
-export default function Tabs({tabsConfig, selectedTab, setSelectedTab}: {tabsConfig: ITabs[], selectedTab: string, setSelectedTab: (id: string) => void}) {
+export default function Tabs({
+  tabsConfig,
+  selectedTab,
+  setSelectedTab,
+}: {
+  tabsConfig?: ITabs[];
+  selectedTab?: string;
+  setSelectedTab?: (id: string) => void;
+}) {
+  const defaultTabs: ITabs[] = [
+    { label: 'Tab 1', id: 'tab1' },
+    { label: 'Tab 2', id: 'tab2' },
+    { label: 'Tab 3', id: 'tab3' },
+  ];
+  const safeTabsConfig = tabsConfig?.length ? tabsConfig : defaultTabs;
+  const [internalSelectedTab, setInternalSelectedTab] = useState<string>(
+    safeTabsConfig[0]?.id ?? 'tab1'
+  );
+  const activeSelectedTab = selectedTab ?? internalSelectedTab;
+  const onTabChange = setSelectedTab ?? setInternalSelectedTab;
 
-  const selectedIndex = tabsConfig.findIndex(section => section.id === selectedTab);
-  const sliderWidth = 100 / tabsConfig.length;
+  const selectedIndex = Math.max(
+    0,
+    safeTabsConfig.findIndex((section) => section.id === activeSelectedTab)
+  );
+  const sliderWidth = 100 / safeTabsConfig.length;
 
   const handleTabChange = (sectionId: string) => {
-    setSelectedTab(sectionId);
+    onTabChange(sectionId);
   };
 
   return (
@@ -26,15 +48,15 @@ export default function Tabs({tabsConfig, selectedTab, setSelectedTab}: {tabsCon
               left: `calc(${selectedIndex * sliderWidth}% + 4px)`,
             }}
           />
-          {tabsConfig.map((tab) => (
+          {safeTabsConfig.map((tab) => (
             <button
               key={tab.id}
-              className={`relative z-20 flex-1 bg-transparent border-none font-medium rounded-full transition-all duration-300 py-2 px-4 ${selectedTab === tab.id
+              className={`relative z-20 flex-1 bg-transparent border-none font-medium rounded-full transition-all duration-300 py-2 px-4 ${activeSelectedTab === tab.id
                 ? 'text-black dark:text-white font-semibold'
                 : 'text-gray-700 dark:text-gray-400 hover:bg-gray-300 dark:hover:bg-gray-700'
                 }`}
               onClick={() => handleTabChange(tab.id)}
-              disabled={selectedTab === tab.id}
+              disabled={activeSelectedTab === tab.id}
             >
               {tab.label}
             </button>
