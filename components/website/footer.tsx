@@ -1,5 +1,5 @@
-import { Heart } from 'lucide-react';
 import { SITE_NAME } from './utils/websiteConstants';
+import Image from 'next/image';
 
 export const Footer = () => {
   const year = new Date().getFullYear();
@@ -11,8 +11,7 @@ export const Footer = () => {
           <p className='flex items-end gap-1.5 text-balance text-sm font-medium text-foreground/90'>
             © {year} {SITE_NAME} |
             Built with
-            {/* <Heart className='size-3.5 shrink-0 text-rose-500/80' aria-label='care' /> */}
-            <img src="https://numan-dev.web.app/images/num_heart.gif" width="26px" aria-label='care' alt="heart" />
+            <Image src="/images/num_heart.gif" width={26} height={26} aria-label='numan ahmed' alt="numan ahmed" />
           </p>
           <p className='text-balance text-xs text-muted-foreground'>
             UI components and patterns for React and Next.js applications.

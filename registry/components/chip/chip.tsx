@@ -26,7 +26,21 @@ const getBorderClass = (border: string | undefined) => {
   }
 }
 
-export default function Chip({ chipData, border, borderColor, textColor, bgColor, isRounded=true }: { chipData: IChip, border?: string, borderColor?: string, textColor?: string, bgColor?: string, isRounded?: boolean}) {
+export default function Chip({
+  chipData = { label: 'Sample Chip', id: 'sample-chip' },
+  border,
+  borderColor,
+  textColor,
+  bgColor,
+  isRounded = true,
+}: {
+  chipData?: IChip;
+  border?: string;
+  borderColor?: string;
+  textColor?: string;
+  bgColor?: string;
+  isRounded?: boolean;
+}) {
 
   return (
     <>
