@@ -5,11 +5,27 @@ export const basicComponents = [
   },
   {
     href: '/components/magnetic-button',
-    name: 'Magnetic Button'
+    name: 'Magnetic Button',
+    new: true
+  },
+  {
+    href: '/components/particle-button',
+    name: 'Particle Burst Button'
   },
   {
     href: '/components/clip-path',
     name: 'Clip Path',
+  },
+  {
+    href: '/components/morph-blob',
+    name: 'Morph Blob',
+    new: true
+  },
+  {
+    href: '/components/flip-card',
+    name: 'Flip Card',
+    component: 'flip-card',
+    new: true,
   },
   {
     href: '/components/product-cards',

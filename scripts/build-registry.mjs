@@ -24,6 +24,10 @@ const registryFileMap = {
     'registry/components/scroll-animation/framer-horizontal-scroll.tsx',
   ],
   'magnetic-button': ['registry/components/magnetic-button/magnetic-button.tsx'],
+  'flip-card': ['registry/components/flip-card/flip-card.tsx'],
+  'tilt-card': ['registry/components/tilt-card/tilt-card.tsx'],
+  'particle-button': ['registry/components/particle-button/particle-button.tsx'],
+  'morph-blob': ['registry/components/morph-blob/morph-blob.tsx'],
 };
 
 const registryTargetMap = {
@@ -37,6 +41,10 @@ const registryTargetMap = {
   'motion-number': ['components/ui/motion-number.tsx'],
   'horizontal-scroll': ['components/ui/horizontal-scroll.tsx'],
   'magnetic-button': ['components/ui/magnetic-button.tsx'],
+  'flip-card': ['components/ui/flip-card.tsx'],
+  'tilt-card': ['components/ui/tilt-card.tsx'],
+  'particle-button': ['components/ui/particle-button.tsx'],
+  'morph-blob': ['components/ui/morph-blob.tsx'],
 };
 
 const registry = [
@@ -107,6 +115,34 @@ const registry = [
     name: 'magnetic-button',
     type: 'registry:ui',
     description: 'A button with magnetic pull effect that follows the cursor with elastic snap-back animation.',
+    dependencies: ['framer-motion'],
+    registryDependencies: [],
+  },
+  {
+    name: 'flip-card',
+    type: 'registry:ui',
+    description: 'A 3D flip card with realistic perspective transforms, multiple directions, and style variants.',
+    dependencies: ['framer-motion'],
+    registryDependencies: [],
+  },
+  {
+    name: 'tilt-card',
+    type: 'registry:ui',
+    description: 'A 3D tilt card that rotates based on mouse position with glare and glow effects.',
+    dependencies: ['framer-motion'],
+    registryDependencies: [],
+  },
+  {
+    name: 'particle-button',
+    type: 'registry:ui',
+    description: 'A button that explodes into colorful particles on click with customizable shapes and effects.',
+    dependencies: ['framer-motion', 'lucide-react'],
+    registryDependencies: [],
+  },
+  {
+    name: 'morph-blob',
+    type: 'registry:ui',
+    description: 'Liquid SVG blobs that continuously morph and flow with gradient colors and glow effects.',
     dependencies: ['framer-motion'],
     registryDependencies: [],
   },

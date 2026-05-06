@@ -82,5 +82,42 @@
       "framer-motion"
     ],
     "registryDependencies": []
+  },
+  {
+    "name": "flip-card",
+    "type": "registry:ui",
+    "description": "A 3D flip card with realistic perspective transforms, multiple directions, and style variants.",
+    "dependencies": [
+      "framer-motion"
+    ],
+    "registryDependencies": []
+  },
+  {
+    "name": "tilt-card",
+    "type": "registry:ui",
+    "description": "A 3D tilt card that rotates based on mouse position with glare and glow effects.",
+    "dependencies": [
+      "framer-motion"
+    ],
+    "registryDependencies": []
+  },
+  {
+    "name": "particle-button",
+    "type": "registry:ui",
+    "description": "A button that explodes into colorful particles on click with customizable shapes and effects.",
+    "dependencies": [
+      "framer-motion",
+      "lucide-react"
+    ],
+    "registryDependencies": []
+  },
+  {
+    "name": "morph-blob",
+    "type": "registry:ui",
+    "description": "Liquid SVG blobs that continuously morph and flow with gradient colors and glow effects.",
+    "dependencies": [
+      "framer-motion"
+    ],
+    "registryDependencies": []
   }
 ]
