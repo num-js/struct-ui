@@ -427,6 +427,202 @@
       "new": true
     },
     {
+      "name": "Terminal",
+      "componentArray": [
+        {
+          "componentName": "terminal",
+          "filesrc": "components/terminal/terminal.tsx",
+          "iframeSrc": "live-components/terminal",
+          "parentlink": "terminal",
+          "parentName": "Terminal"
+        },
+        {
+          "componentName": "terminal-default",
+          "filesrc": "components/terminal/terminal-default.tsx",
+          "iframeSrc": "live-components/terminal-default",
+          "parentlink": "terminal",
+          "parentName": "Terminal"
+        },
+        {
+          "componentName": "terminal-themes",
+          "filesrc": "components/terminal/terminal-themes.tsx",
+          "iframeSrc": "live-components/terminal-themes",
+          "parentlink": "terminal",
+          "parentName": "Terminal"
+        },
+        {
+          "componentName": "terminal-multiline",
+          "filesrc": "components/terminal/terminal-multiline.tsx",
+          "iframeSrc": "live-components/terminal-multiline",
+          "parentlink": "terminal",
+          "parentName": "Terminal"
+        },
+        {
+          "componentName": "terminal-npm",
+          "filesrc": "components/terminal/terminal-npm.tsx",
+          "iframeSrc": "live-components/terminal-npm",
+          "parentlink": "terminal",
+          "parentName": "Terminal"
+        },
+        {
+          "componentName": "terminal-error",
+          "filesrc": "components/terminal/terminal-error.tsx",
+          "iframeSrc": "live-components/terminal-error",
+          "parentlink": "terminal",
+          "parentName": "Terminal"
+        },
+        {
+          "componentName": "terminal-loop",
+          "filesrc": "components/terminal/terminal-loop.tsx",
+          "iframeSrc": "live-components/terminal-loop",
+          "parentlink": "terminal",
+          "parentName": "Terminal"
+        },
+        {
+          "componentName": "terminal-linenumbers",
+          "filesrc": "components/terminal/terminal-linenumbers.tsx",
+          "iframeSrc": "live-components/terminal-linenumbers",
+          "parentlink": "terminal",
+          "parentName": "Terminal"
+        },
+        {
+          "componentName": "terminal-deploy",
+          "filesrc": "components/terminal/terminal-deploy.tsx",
+          "iframeSrc": "live-components/terminal-deploy",
+          "parentlink": "terminal",
+          "parentName": "Terminal"
+        }
+      ],
+      "type": "terminal",
+      "new": true
+    },
+    {
+      "name": "Animated Beam",
+      "componentArray": [
+        {
+          "componentName": "animated-beam",
+          "filesrc": "components/animated-beam/animated-beam.tsx",
+          "iframeSrc": "live-components/animated-beam",
+          "parentlink": "animated-beam",
+          "parentName": "Animated Beam"
+        },
+        {
+          "componentName": "animated-beam-default",
+          "filesrc": "components/animated-beam/animated-beam-default.tsx",
+          "iframeSrc": "live-components/animated-beam-default",
+          "parentlink": "animated-beam",
+          "parentName": "Animated Beam"
+        },
+        {
+          "componentName": "animated-beam-one-to-one",
+          "filesrc": "components/animated-beam/animated-beam-one-to-one.tsx",
+          "iframeSrc": "live-components/animated-beam-one-to-one",
+          "parentlink": "animated-beam",
+          "parentName": "Animated Beam"
+        },
+        {
+          "componentName": "animated-beam-bidirectional",
+          "filesrc": "components/animated-beam/animated-beam-bidirectional.tsx",
+          "iframeSrc": "live-components/animated-beam-bidirectional",
+          "parentlink": "animated-beam",
+          "parentName": "Animated Beam"
+        },
+        {
+          "componentName": "animated-beam-many-to-one",
+          "filesrc": "components/animated-beam/animated-beam-many-to-one.tsx",
+          "iframeSrc": "live-components/animated-beam-many-to-one",
+          "parentlink": "animated-beam",
+          "parentName": "Animated Beam"
+        },
+        {
+          "componentName": "animated-beam-one-to-many",
+          "filesrc": "components/animated-beam/animated-beam-one-to-many.tsx",
+          "iframeSrc": "live-components/animated-beam-one-to-many",
+          "parentlink": "animated-beam",
+          "parentName": "Animated Beam"
+        },
+        {
+          "componentName": "animated-beam-multiple",
+          "filesrc": "components/animated-beam/animated-beam-multiple.tsx",
+          "iframeSrc": "live-components/animated-beam-multiple",
+          "parentlink": "animated-beam",
+          "parentName": "Animated Beam"
+        },
+        {
+          "componentName": "animated-beam-showcase",
+          "filesrc": "components/animated-beam/animated-beam-showcase.tsx",
+          "iframeSrc": "live-components/animated-beam-showcase",
+          "parentlink": "animated-beam",
+          "parentName": "Animated Beam"
+        }
+      ],
+      "type": "animated-beam",
+      "new": true
+    },
+    {
+      "name": "Orbiting Circles",
+      "componentArray": [
+        {
+          "componentName": "orbiting-circles",
+          "filesrc": "components/orbiting-circles/orbiting-circles.tsx",
+          "iframeSrc": "live-components/orbiting-circles",
+          "parentlink": "orbiting-circles",
+          "parentName": "Orbiting Circles"
+        },
+        {
+          "componentName": "orbiting-circles-default",
+          "filesrc": "components/orbiting-circles/orbiting-circles-default.tsx",
+          "iframeSrc": "live-components/orbiting-circles-default",
+          "parentlink": "orbiting-circles",
+          "parentName": "Orbiting Circles"
+        },
+        {
+          "componentName": "orbiting-circles-tech",
+          "filesrc": "components/orbiting-circles/orbiting-circles-tech.tsx",
+          "iframeSrc": "live-components/orbiting-circles-tech",
+          "parentlink": "orbiting-circles",
+          "parentName": "Orbiting Circles"
+        },
+        {
+          "componentName": "orbiting-circles-social",
+          "filesrc": "components/orbiting-circles/orbiting-circles-social.tsx",
+          "iframeSrc": "live-components/orbiting-circles-social",
+          "parentlink": "orbiting-circles",
+          "parentName": "Orbiting Circles"
+        },
+        {
+          "componentName": "orbiting-circles-speed",
+          "filesrc": "components/orbiting-circles/orbiting-circles-speed.tsx",
+          "iframeSrc": "live-components/orbiting-circles-speed",
+          "parentlink": "orbiting-circles",
+          "parentName": "Orbiting Circles"
+        },
+        {
+          "componentName": "orbiting-circles-minimal",
+          "filesrc": "components/orbiting-circles/orbiting-circles-minimal.tsx",
+          "iframeSrc": "live-components/orbiting-circles-minimal",
+          "parentlink": "orbiting-circles",
+          "parentName": "Orbiting Circles"
+        },
+        {
+          "componentName": "orbiting-circles-gradient",
+          "filesrc": "components/orbiting-circles/orbiting-circles-gradient.tsx",
+          "iframeSrc": "live-components/orbiting-circles-gradient",
+          "parentlink": "orbiting-circles",
+          "parentName": "Orbiting Circles"
+        },
+        {
+          "componentName": "orbiting-circles-showcase",
+          "filesrc": "components/orbiting-circles/orbiting-circles-showcase.tsx",
+          "iframeSrc": "live-components/orbiting-circles-showcase",
+          "parentlink": "orbiting-circles",
+          "parentName": "Orbiting Circles"
+        }
+      ],
+      "type": "orbiting-circles",
+      "new": true
+    },
+    {
       "name": "Text Typing",
       "componentArray": [
         {

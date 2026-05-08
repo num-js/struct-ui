@@ -128,5 +128,28 @@
       "framer-motion"
     ],
     "registryDependencies": []
+  },
+  {
+    "name": "terminal",
+    "type": "registry:ui",
+    "description": "A customizable terminal component with typing animation, multiple themes (macOS, Windows, Linux), and support for various output types.",
+    "dependencies": [
+      "framer-motion"
+    ],
+    "registryDependencies": []
+  },
+  {
+    "name": "orbiting-circles",
+    "type": "registry:ui",
+    "description": "Animated orbiting circles with icons rotating in opposite directions, pause on hover, and customizable speeds.",
+    "dependencies": [],
+    "registryDependencies": []
+  },
+  {
+    "name": "animated-beam",
+    "type": "registry:ui",
+    "description": "An animated beam of light that travels along a path, perfect for showcasing integrations and connections.",
+    "dependencies": [],
+    "registryDependencies": []
   }
 ]

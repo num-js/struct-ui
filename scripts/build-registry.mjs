@@ -29,6 +29,9 @@ const registryFileMap = {
   'particle-button': ['registry/components/particle-button/particle-button.tsx'],
   'morph-blob': ['registry/components/morph-blob/morph-blob.tsx'],
   'text-typing': ['registry/components/text-typing/text-typing.tsx'],
+  'terminal': ['registry/components/terminal/terminal.tsx'],
+  'orbiting-circles': ['registry/components/orbiting-circles/orbiting-circles.tsx'],
+  'animated-beam': ['registry/components/animated-beam/animated-beam.tsx'],
 };
 
 const registryTargetMap = {
@@ -47,6 +50,9 @@ const registryTargetMap = {
   'particle-button': ['components/ui/particle-button.tsx'],
   'morph-blob': ['components/ui/morph-blob.tsx'],
   'text-typing': ['components/ui/text-typing.tsx'],
+  'terminal': ['components/ui/terminal.tsx'],
+  'orbiting-circles': ['components/ui/orbiting-circles.tsx'],
+  'animated-beam': ['components/ui/animated-beam.tsx'],
 };
 
 const registry = [
@@ -153,6 +159,27 @@ const registry = [
     type: 'registry:ui',
     description: 'Smooth text typing animation that cycles through texts with typewriter effect and customizable cursor.',
     dependencies: ['framer-motion'],
+    registryDependencies: [],
+  },
+  {
+    name: 'terminal',
+    type: 'registry:ui',
+    description: 'A customizable terminal component with typing animation, multiple themes (macOS, Windows, Linux), and support for various output types.',
+    dependencies: ['framer-motion'],
+    registryDependencies: [],
+  },
+  {
+    name: 'orbiting-circles',
+    type: 'registry:ui',
+    description: 'Animated orbiting circles with icons rotating in opposite directions, pause on hover, and customizable speeds.',
+    dependencies: [],
+    registryDependencies: [],
+  },
+  {
+    name: 'animated-beam',
+    type: 'registry:ui',
+    description: 'An animated beam of light that travels along a path, perfect for showcasing integrations and connections.',
+    dependencies: [],
     registryDependencies: [],
   },
 ];

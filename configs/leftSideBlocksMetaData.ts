@@ -1,5 +1,36 @@
 export const basicBlocks = [
   {
+    href: '/blocks/headers',
+    name: 'Headers',
+    component: 'headers',
+  },
+  {
+    href: '/blocks/hero-sections',
+    name: 'Hero',
+    component: 'hero',
+  },
+  {
+    href: '/blocks/blog-sections',
+    name: 'Blog',
+    component: 'blog',
+  },
+  {
+    href: '/blocks/pricing',
+    name: 'Pricing',
+    component: 'pricing',
+    new: true,
+  },
+  {
+    href: '/blocks/steps',
+    name: 'Steps',
+    component: 'steps',
+  },
+  {
+    href: '/blocks/footers',
+    name: 'Footers',
+    component: 'footers',
+  },
+  {
     href: '/blocks/product-cards',
     name: 'Product Cards',
     component: 'card',

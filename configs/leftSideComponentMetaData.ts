@@ -18,13 +18,26 @@ export const basicComponents = [
     new: true
   },
   {
+    href: '/components/terminal',
+    name: 'Terminal',
+    new: true
+  },
+  {
     href: '/components/clip-path',
     name: 'Clip Path',
   },
   {
+    href: '/components/animated-beam',
+    name: 'Animated Beam',
+  },
+  {
+    href: '/components/orbiting-circles',
+    name: 'Orbiting Circles',
+    new: true,
+  },
+  {
     href: '/components/morph-blob',
     name: 'Morph Blob',
-    new: true
   },
   {
     href: '/components/flip-card',
